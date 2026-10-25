@@ -1,0 +1,10 @@
+.venv/
+.build/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# The course handout is a local reference, not a submission artifact.
+*.pdf
