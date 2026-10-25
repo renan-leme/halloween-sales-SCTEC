@@ -2,7 +2,7 @@
 
 The analysis covers 1,500 distinct orders from the fictional retailer Festa em Cena, recorded from August to November in 2024 and 2025. Each row represents one order for one product, possibly with several units. Counts describe registered orders across all statuses, not revenue, units sold, or completed sales.
 
-The notebook uses Pandas to read the UTF-8 CSV as text and translates all 14 column names into English. The original CSV is preserved; a separate copy has English headers. Category cleaning fills 18 originally blank values with the required label "sem categoria" and changes 1,482 nonblank values through trimming, lowercasing, and punctuation removal. Sales channels are standardized to Mercado, Loja física, and Web; 45 channel values change and all channels are recognized.
+The notebook uses Pandas to read halloween_sales.csv as UTF-8 text, with all 14 column names already in English. The input CSV is preserved without overwriting its values. Category cleaning fills 18 originally blank values with the required label "sem categoria" and changes 1,482 nonblank values through trimming, lowercasing, and punctuation removal. Sales channels are standardized to Mercado, Loja física, and Web; 45 channel values change and all channels are recognized.
 
 Numeric validation flags 7 invalid quantities and 12 missing unit prices, affecting 19 different orders. Quantities must be positive integers; prices must be present and nonnegative. Four sale timestamps are invalid. Numeric and date problems together affect 23 distinct orders. Original values remain visible, errors are marked, and no replacement values are invented.
 

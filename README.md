@@ -13,14 +13,14 @@ The objective is to identify and document these problems, investigate delivery d
 | File | Purpose |
 |---|---|
 | `halloween_sales.ipynb` | Teaching notebook with explanations, functions, examples, and executed outputs |
-| `halloween_vendas.csv` | Original input, with Portuguese headers and unchanged source values |
-| `halloween_sales.csv` | Copy with English headers and the same source values, created by notebook step 2 |
+| `halloween_sales.csv` | Notebook input, with English headers and unchanged source values |
+| `halloween_vendas.csv` | Preserved course reference with Portuguese headers; not read by the notebook |
 | `README.md` | Execution guide, decisions, results, and presentation guidance |
 | `report.md` | Required findings report, within 1,500–3,000 characters including spaces |
 | `requirements.txt` | Python packages needed to open and execute the notebook |
 | `.gitignore` | Excludes the virtual environment, temporary files, notebook checkpoints, and local course PDF |
 
-The source data is supplied by the [course repository](https://github.com/Machine-Learning-Visao-Computacional-T5/python_exercises/blob/main/data_analysis/arquivo_mini_projeto/halloween_vendas.csv). Keep `halloween_vendas.csv` in the same folder as the notebook. The notebook reads the original and writes only the separate English-header copy; it does not overwrite the source or export a falsely corrected dataset.
+The source data is supplied by the [course repository](https://github.com/Machine-Learning-Visao-Computacional-T5/python_exercises/blob/main/data_analysis/arquivo_mini_projeto/halloween_vendas.csv). Keep **`halloween_sales.csv`** in the same folder as the notebook. This is the only CSV used by the notebook. Its headers have been translated into English; the data values are preserved. The notebook does not overwrite the input or export a falsely corrected dataset. The Portuguese-header reference is retained for provenance and is not needed to execute the analysis.
 
 ## Installation and execution
 
@@ -50,7 +50,7 @@ Pandas handles tabular data, Notebook provides the interface, ipykernel runs Pyt
 
 ## English column names and field meanings
 
-All working columns and code identifiers are English. The original CSV retains its headers to preserve the assignment's source; `halloween_sales.csv` has the translated headers below. Text values remain as recorded, apart from the required category and channel normalization in the working DataFrame.
+All input columns, working columns, and code identifiers are English. `halloween_sales.csv` already has the translated headers below, so the notebook reads them directly. The mapping table documents the original course headers. Text values remain as recorded, apart from the required category and channel normalization in the working DataFrame.
 
 | Source header | English header | Meaning |
 |---|---|---|
@@ -175,7 +175,7 @@ The rubric refers to physical dimensions and an approval date, although the deta
 |---|---|
 | 0:00–0:40 | Introduce the fictional retailer, the problem, and what one row represents. |
 | 0:40–1:20 | Show required files, installation, the five sprints, and each branch's purpose. |
-| 1:20–2:10 | Execute ingestion; explain text input, English headers, the preserved source, and category/channel normalization. |
+| 1:20–2:10 | Execute ingestion from `halloween_sales.csv`; explain text input, existing English headers, the preserved input, and category/channel normalization. |
 | 2:10–3:05 | Execute validation; explain positive integer quantities, nonnegative prices, flags, and the union of affected orders. |
 | 3:05–4:00 | Execute the delivery check and date parsing; explain the counterexamples and continuing after invalid dates. |
 | 4:00–5:10 | Execute the count and finding cells; explain both findings, all-status inclusion, exclusions, and limitations. |
