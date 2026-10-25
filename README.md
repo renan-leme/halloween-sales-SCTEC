@@ -15,7 +15,7 @@ The objective is to identify and document these problems, investigate delivery d
 | `halloween_sales.ipynb` | Teaching notebook with explanations, functions, examples, and executed outputs |
 | `halloween_sales.csv` | Notebook input, with English headers and unchanged source values |
 | `halloween_vendas.csv` | Preserved course reference with Portuguese headers; not read by the notebook |
-| `README.md` | Execution guide, decisions, results, and presentation guidance |
+| `README.md` | Execution guide, decisions, results, and evaluation checklist |
 | `report.md` | Required findings report, within 1,500–3,000 characters including spaces |
 | `requirements.txt` | Python packages needed to open and execute the notebook |
 | `.gitignore` | Excludes the virtual environment, temporary files, notebook checkpoints, and local course PDF |
@@ -160,7 +160,7 @@ The handout contains documentation and video criteria in addition to the technic
 | Criterion | Evidence |
 |---|---|
 | Version control and documentation | Public repository, meaningful commits, this README, and the ML/data-quality reflection |
-| Video | Record and submit the demonstration using the outline below |
+| Video | Record and submit the required demonstration |
 | CSV manipulation | Notebook sprint 1: `pd.read_csv()`, text input, original preserved, first three rows |
 | Missing values and conditionals | Sprints 2–3: explicit blank handling, category placeholder, quantity/price rules and flags |
 | Business rules and dates | Sprint 4: delivery groups, counterexamples, `strptime`, date parts, and `strftime` |
@@ -168,23 +168,6 @@ The handout contains documentation and video criteria in addition to the technic
 | `report.md` | English findings report; final notebook cell checks the exact 1,500–3,000 character limit |
 
 The rubric refers to physical dimensions and an approval date, although the detailed task specifies quantity, unit price, and `data_venda`. This solution follows the detailed requirements, uses the specified lowercase placeholder `sem categoria`, and includes the ML reflection explicitly required by the rubric.
-
-## Presentation outline — 5 to 7 minutes
-
-| Time | What to demonstrate and explain |
-|---|---|
-| 0:00–0:40 | Introduce the fictional retailer, the problem, and what one row represents. |
-| 0:40–1:20 | Show required files, installation, the five sprints, and each branch's purpose. |
-| 1:20–2:10 | Execute ingestion from `halloween_sales.csv`; explain text input, existing English headers, the preserved input, and category/channel normalization. |
-| 2:10–3:05 | Execute validation; explain positive integer quantities, nonnegative prices, flags, and the union of affected orders. |
-| 3:05–4:00 | Execute the delivery check and date parsing; explain the counterexamples and continuing after invalid dates. |
-| 4:00–5:10 | Execute the count and finding cells; explain both findings, all-status inclusion, exclusions, and limitations. |
-| 5:10–6:10 | Show `report.md` and its character count; explain the data-quality/ML reflection. |
-| 6:10–6:40 | Describe what you learned, a real difficulty you experienced, and a possible improvement within these requirements. |
-
-Explain the logic in your own words instead of reading the code. Useful topics to study are distinguishing an order from its quantity, avoiding overlapping error counts, and using counterexamples to test a business assumption. For improvements, discuss making validation messages easier to explain or extending examples of the existing rules; no additional feature is needed for this submission.
-
-**Submission still requires your recording:** upload the repository link and a 5–7 minute video to the AVA task. Check the AVA for the deadline and whether the work is individual or in a group.
 
 ## Technical references
 
